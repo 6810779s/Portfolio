@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EH Portfolio</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 <!-- 추가해야 될 것: 내 블로그 주소 및 깃허브 주소 -->
 
@@ -38,7 +40,6 @@
     </header>
     <!-- -----------------------------------------------header----------- -->
     <section>
-
       <div id="profile">
         <div class="slider_container">
           <div class="slide">
@@ -51,12 +52,34 @@
             <p class="main">아직은 부족할 수 있으나, <br>&emsp;그만큼 배움에 절실하여<br>&emsp;&emsp;끊임없이 노력하고 있습니다.</p>
           </div>
         </div>
+      </div>
+      <div id="profile2">
+        <div class="slider_container">
+          <div class="slide">
+            <p class="main">Eunhee's portfolio.</p>
+          </div>
+          <div class="slide">
+            <p class="main">2020년 12월 부터 <br>&emsp;개발자의 길을 걷고 있습니다.</p>
+          </div>
+          <div class="slide">
+            <p class="main">아직은 부족할 수 있으나, <br>&emsp;그만큼 배움에 절실하여<br>&emsp;&emsp;끊임없이 노력하고 있습니다.</p>
+          </div>
+        </div>
+        
 
         <!-- <button class="btn" id="prev">&lang;</button>
           <button class="btn" id="next">&rang;</button> -->
       </div>
+      <div id="profile3">
+        <div class="slider_container">
+          <div class="slide">
+            <p class="main">Eunhee's portfolio.</p>
+          </div>
+        </div>
+      </div>
+      
       <!-- -----------------------------------------------profile----------- -->
-      <div id="about_me">
+      <div id="about_me" data-aos="fade-down">
         <div class="main_name_about">
           <p>About Me</p>
         </div>
@@ -88,7 +111,6 @@
             </li>
           </ul>
         </div>
-        
       </div>
       <!-- -----------------------------------------------about_me----------- -->
 
@@ -105,7 +127,7 @@
               <li>
                 <img src="images/java.png" alt="java">
                 <div class="caption">
-                  <p>How did I learn? <br>- 내일배움카드</p>
+                  <h2>LV 3</h2>
                 </div>
                 <div class="language">
                   <h2>JAVA</h2>
@@ -115,7 +137,7 @@
   
                 <img src="images/html.png" alt="html">
                 <div class="caption">
-                  <p>How did I learn? <br>- 독학</p>
+                  <h2>LV 3</h2>
                 </div>
                 <div class="language">
                   <h2>HTML</h2>
@@ -125,7 +147,7 @@
   
                 <img src="images/css.png" alt="CSS">
                 <div class="caption">
-                  <p>How did I learn? <br>- 독학</p>
+                  <h2>LV3</h2>
                 </div>
                 <div class="language">
                   <h2>CSS</h2>
@@ -133,22 +155,22 @@
               </li>
               <li>
   
-                <img src="images/python.png" alt="python">
+                <img src="images/c.png" alt="C">
                 <div class="caption">
-                  <p>How did I learn? <br>- 독학</p>
+                  <h2>LV3</h2>
                 </div>
                 <div class="language">
-                  <h2>PYTHON</h2>
+                  <h2>C</h2>
                 </div>
               </li>
               <li>
   
-                <img src="images/c.png" alt="C">
+                <img src="images/python.png" alt="python">
                 <div class="caption">
-                  <p>How did I learn? <br>- 내일배움카드</p>
+                  <h2>LV2</h2>
                 </div>
                 <div class="language">
-                  <h2>C</h2>
+                  <h2>PYTHON</h2>
                 </div>
               </li>
             </ul>
@@ -164,7 +186,7 @@
   
                 <img src="images/javascript.png" alt="Javascript">
                 <div class="caption">
-                  <p>How did I learn? <br>- 독학</p>
+                  <h2>LV 1.5</h2>
                 </div>
                 <div class="language">
                   <h2>JAVASCRIPT</h2>
@@ -174,7 +196,7 @@
   
                 <img src="images/mysql.png" alt="Mysql">
                 <div class="caption">
-                  <p>How did I learn? <br>- 내일배움카드</p>
+                  <h2>LV 1</h2>
                 </div>
                 <div class="language">
                   <h2>MYSQL</h2>
@@ -184,7 +206,7 @@
   
                 <img src="images/android.png" alt="Android">
                 <div class="caption">
-                  <p>How did I learn? <br>- 내일배움카드</p>
+                  <h2>LV 1</h2>
                 </div>
                 <div class="language">
                   <h2>ANDROID</h2>
@@ -193,9 +215,113 @@
             </ul>
           </div>
         </div>
+        <div class="skill_container2">
+          <div class="what_language">
+            <ul>
+              <li>
+                <img src="images/java.png" alt="Java">
+                <img src="images_phone/java.png" alt="phone">
+                
+              </li>
+              <li>
+                <img src="images/html.png" alt="html">
+                <img src="images_phone/html.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/css.png" alt="css">
+                <img src="images_phone/css.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/c.png" alt="c">
+                <img src="images_phone/c.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/python.png" alt="python">
+                <img src="images_phone/python.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/javascript.png" alt="javascript">
+                <img src="images_phone/javascript.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/mysql.png" alt="mySQL">
+                <img src="images_phone/mysql.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/android.png" alt="Android">
+                <img src="images_phone/android.png" alt="phone">
+              </li>
+            </ul>
+          </div>
+          <div class="languages_skill">
+            <ul>
+              <li><div class="java_box" ></div></li>
+              <li><div class="html_box" ></div></li>
+              <li><div class="css_box" ></div></li>
+              <li><div class="c_box" ></div></li>
+              <li><div class="python_box" ></div></li>
+              <li><div class="JS_box" ></div></li>
+              <li><div class="mySQL_box"></div></li>
+              <li><div class="Android_box"></div></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill_container3">
+          <div class="what_language">
+            <ul>
+              <li>
+                <img src="images/java.png" alt="Java">
+                <img src="images_phone/java.png" alt="phone">
+                
+              </li>
+              <li>
+                <img src="images/html.png" alt="html">
+                <img src="images_phone/html.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/css.png" alt="css">
+                <img src="images_phone/css.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/c.png" alt="c">
+                <img src="images_phone/c.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/python.png" alt="python">
+                <img src="images_phone/python.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/javascript.png" alt="javascript">
+                <img src="images_phone/javascript.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/mysql.png" alt="mySQL">
+                <img src="images_phone/mysql.png" alt="phone">
+              </li>
+              <li>
+                <img src="images/android.png" alt="Android">
+                <img src="images_phone/android.png" alt="phone">
+              </li>
+            </ul>
+          </div>
+          <div class="languages_skill">
+            <ul>
+              <li><div class="java_box" ></div></li>
+              <li><div class="html_box" ></div></li>
+              <li><div class="css_box" ></div></li>
+              <li><div class="c_box" ></div></li>
+              <li><div class="python_box" ></div></li>
+              <li><div class="JS_box" ></div></li>
+              <li><div class="mySQL_box"></div></li>
+              <li><div class="Android_box"></div></li>
+            </ul>
+          </div>
+        </div>
+
         
       </div>
-      <div id="archiving">
+      <div id="archiving" data-aos="fade-down">
         <div class="main_name_arch">
           <p>Archiving</p>
         </div>
@@ -229,7 +355,7 @@
         <div class="main_name_project">
           <p>Project</p>
         </div>
-        <div class="java_project">
+        <div class="java_project" data-aos="fade-down">
           <div>
             <p>Java Project</p>
           </div>
@@ -270,7 +396,7 @@
             </li>
           </ul>
         </div>
-        <div class="c_project">
+        <div class="c_project" data-aos="fade-down">
           <div>
             <p>C Project</p>
           </div>
