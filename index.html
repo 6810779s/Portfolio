@@ -1,12 +1,314 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- PDF(Adobe Acrobat) 파일을 열기 위한 링크 URL을 생성할 때 여러 번 누르지 않으려면 위 meta태그 사용 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>포트폴리오</title>
+  <title>EH Portfolio</title>
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
+<!-- 추가해야 될 것: 내 블로그 주소 및 깃허브 주소 -->
+
 <body>
-  <p>포폴 제작중..</p>
+  <div id="container">
+    <header>
+      <nav id="top">
+        <div class="logo_top">
+          <a href="#profile"><p>Eunhee</p></a>
+        </div>
+        <div id="menu">
+          <ul>
+            <li>
+              <a href="#about_me"><p>ABOUT</p></a> 
+            </li>
+            <li>
+              <a href="#skills"><p>SKILLS</p></a>
+            </li>
+            <li>
+              <a href="#archiving"><p>ARCHIVING</p></a>
+            </li>
+            <li>
+              <a href="#project"><p>PROJECT</p></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- -----------------------------------------------header----------- -->
+    <section>
+
+      <div id="profile">
+        <div class="slider_container">
+          <div class="slide">
+            <p class="main">Eunhee's portfolio.</p>
+          </div>
+          <div class="slide">
+            <p class="main">2020년 12월 부터 <br>&emsp;개발자의 길을 걷고 있습니다.</p>
+          </div>
+          <div class="slide">
+            <p class="main">아직은 부족할 수 있으나, <br>&emsp;그만큼 배움에 절실하여<br>&emsp;&emsp;끊임없이 노력하고 있습니다.</p>
+          </div>
+        </div>
+
+        <!-- <button class="btn" id="prev">&lang;</button>
+          <button class="btn" id="next">&rang;</button> -->
+      </div>
+      <!-- -----------------------------------------------profile----------- -->
+      <div id="about_me">
+        <div class="main_name_about">
+          <p>About Me</p>
+        </div>
+        <div class="info1">
+          <ul>
+            <li>
+              <div>
+                <img src="images/user.png" alt="name">
+                <p>장은희</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/calendar.png" alt="birth">
+                <p>1997.07.22</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/phone.png" alt="phone">
+                <p>010-9586-6763</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/email.png" alt="email">
+                <p>6810779s@naver.com</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <!-- -----------------------------------------------about_me----------- -->
+
+      <div id="skills">
+        <div class="main_name_skills">
+          <p>Skills</p>
+        </div>
+        <div class="skill_container">
+          <div id="familiar">
+            <div>
+              <p>familiar</p>
+            </div>
+            <ul class="familiar_language">
+              <li>
+                <img src="images/java.png" alt="java">
+                <div class="caption">
+                  <p>How did I learn? <br>- 내일배움카드</p>
+                </div>
+                <div class="language">
+                  <h2>JAVA</h2>
+                </div>
+              </li>
+              <li>
+  
+                <img src="images/html.png" alt="html">
+                <div class="caption">
+                  <p>How did I learn? <br>- 독학</p>
+                </div>
+                <div class="language">
+                  <h2>HTML</h2>
+                </div>
+              </li>
+              <li>
+  
+                <img src="images/css.png" alt="CSS">
+                <div class="caption">
+                  <p>How did I learn? <br>- 독학</p>
+                </div>
+                <div class="language">
+                  <h2>CSS</h2>
+                </div>
+              </li>
+              <li>
+  
+                <img src="images/python.png" alt="python">
+                <div class="caption">
+                  <p>How did I learn? <br>- 독학</p>
+                </div>
+                <div class="language">
+                  <h2>PYTHON</h2>
+                </div>
+              </li>
+              <li>
+  
+                <img src="images/c.png" alt="C">
+                <div class="caption">
+                  <p>How did I learn? <br>- 내일배움카드</p>
+                </div>
+                <div class="language">
+                  <h2>C</h2>
+                </div>
+              </li>
+            </ul>
+          </div>
+  
+  
+          <div id="tried">
+            <div>
+              <p>tried</p>
+            </div>
+            <ul class="tried_language">
+              <li>
+  
+                <img src="images/javascript.png" alt="Javascript">
+                <div class="caption">
+                  <p>How did I learn? <br>- 독학</p>
+                </div>
+                <div class="language">
+                  <h2>JAVASCRIPT</h2>
+                </div>
+              </li>
+              <li>
+  
+                <img src="images/mysql.png" alt="Mysql">
+                <div class="caption">
+                  <p>How did I learn? <br>- 내일배움카드</p>
+                </div>
+                <div class="language">
+                  <h2>MYSQL</h2>
+                </div>
+              </li>
+              <li>
+  
+                <img src="images/android.png" alt="Android">
+                <div class="caption">
+                  <p>How did I learn? <br>- 내일배움카드</p>
+                </div>
+                <div class="language">
+                  <h2>ANDROID</h2>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div id="archiving">
+        <div class="main_name_arch">
+          <p>Archiving</p>
+        </div>
+        <div class="arch_container">
+          <ul>
+            <li>
+              <img src="images/tistory.png" alt="tistory">
+              <div class="caption_link">
+                <p><a href="https://eunhee-programming.tistory.com/" target="_blank">코드짜는 문과녀<br>사이트 바로가기</a></p>
+              </div>
+              <div class="explain">
+                <p><b>TISTORY</b></p>
+                <p>배운 지식을 흘려보내는 것이 아니라, 항시 기록하며 끊임없이 자기계발을 하고있습니다.</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/github.png" alt="github">
+              <div class="caption_link">
+                <p><a href="https://github.com/6810779s?tab=repositories" target="_blank">깃허브 바로가기</a></p>
+              </div>
+              <div class="explain">
+                <p><b>GitHub</b></p>
+                <p>깃허브에 쌓이는 프로젝트들과 함께 성장하는 개발자입니다.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+       
+      </div>
+      <div id="project">
+        <div class="main_name_project">
+          <p>Project</p>
+        </div>
+        <div class="java_project">
+          <div>
+            <p>Java Project</p>
+          </div>
+          <ul>
+            <li>
+              <!-- <div class="explain_project">
+                <p>&#60;소켓 통신을 사용한 <br>자바채팅 프로그램&#62;</p>
+              </div> -->
+              <img src="images/project_chatting.png" alt="chatting">
+              
+              <div class="caption_java">
+                <p>&#60;멀티채팅 프로그램&#62;</p>
+                <p>개발인원: 1인</p>
+                <p>개발언어: Java/JavaFx</p>
+                <!-- <p>프로젝트 실행 영상 바로가기</p> -->
+              </div>
+              <div class="explain_link">
+                <p><a href="https://github.com/6810779s/Javafx_ChattingProject" target="_blank">GitHub 링크</a></p>
+                <p><a href="pdf/chatting.pdf" target="_blank">pdf버전 포트폴리오 바로 보기</a></p>
+              </div>
+            </li>
+            <li>
+              <!-- <div class="explain_project">
+                <h3>소켓 통신을 사용한 <br>1:1 부루마블 매칭 프로그램</h3>
+              </div> -->
+              <img src="images/project_bluemarble.png" alt="bluemarble">
+              <div class="caption_java">
+                <p>&#60;소켓 통신을 사용한 <br>1:1 부루마블 매칭 프로그램&#62;</p>
+                <p>개발인원: 3인</p>
+                <p>개발언어: Java/JavaFx/mySQL</p>
+                <!-- <p>프로젝트 실행 영상 바로가기</p> -->
+              </div>
+              <div class="explain_link">
+                <p><a href="https://github.com/6810779s/javafx_BlueMarble_project" target="_blank">GitHub 링크</a></p>
+                <p><a href="pdf/bluemarble.pdf" target="_blank">pdf버전 포트폴리오 바로 보기</a></p>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+        <div class="c_project">
+          <div>
+            <p>C Project</p>
+          </div>
+          <ul>
+            <li>
+              <!-- <div class="explain_project">
+                <p>전화번호부 프로그램</p>
+              </div> -->
+              <img src="images//project_tel.png" alt="telephone">
+              <div class="caption_c">
+                <p>&#60;전화번호부 프로그램&#62;</p>
+                <p>개발인원: 3인</p>
+                <p>개발언어: C</p>
+                <!-- <p>프로젝트 실행 영상 바로가기</p> -->
+              </div>
+              <div class="explain_link">
+                <p><a href="https://github.com/6810779s/C_phone-list-project" target="_blank">GitHub 링크</a></p>
+                <p><a href="pdf/tel.pdf" target="_blank">pdf버전 포트폴리오 바로 보기</a></p>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="logo_bottom">
+        <a href="#profile"><p>Eunhee</p></a>
+        <div id="contact">
+          <ul>
+            <li><b>TEL.</b> 010-9586-6763</li>
+            <li><b>E-mail.</b> 6810779s@naver.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="JS/style.js"></script>
 </body>
+
 </html>
