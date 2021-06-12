@@ -730,14 +730,10 @@ footer{
   clear: both;
 }
 
+
 #hidden_menu .hiddenMenu ul li:hover{
-  width: 180px;
-  height: 50px;
   background: rgb(194, 179, 177);
 }
-
-
-
 
   #profile{
     display:none;
