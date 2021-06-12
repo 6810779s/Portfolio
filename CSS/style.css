@@ -22,8 +22,7 @@ li{
 #container header{
   height: 80px;
   font-size: 1.2em;
-  left: 0;
-  top: 0;
+
 }
 
 nav{
@@ -50,6 +49,11 @@ nav{
   
 }
 
+#hidden_menu{
+  display: none;
+}
+
+
 #top a:visited{
   color: black;
   text-decoration: none;
@@ -64,12 +68,10 @@ nav{
   text-decoration: underline;
 }
 
-#menu li{
+#menu ul:first-child li{
   margin-right: 50px;
   float: left;
 }
-
-
 
 section{
   width: 100%;
@@ -147,26 +149,36 @@ section{
   margin-top: 50px;
 }
 
-.info1{
-  width: 1000px;
-  height: 100%;
-  margin: auto;
-}
-
-
-
-
-
 #about_me{
   width: 100%;
   height: 600px;
   margin: auto;
   padding-top: 50px;
   background: rgb(241, 240, 240);
-  /* background-color: rgb(174, 188, 226); */
+  position: relative;
 }
 
-#about_me img{
+#about_me img[alt="leaf1"]{
+  position: absolute;
+  right: 0;
+  top:500px;
+}
+#about_me img[alt="leaf2"]{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info1{
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+#about_me .info1 .my_info img{
   border-radius: 50%;
   border: 1px solid gray;
   
@@ -180,23 +192,58 @@ section{
   border-bottom:1px solid gray;
 }
 
+.me{
+  width: 360px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#about_me .info1 .me div:last-child p{
+  width: 190px;
+  height: 20px;
+  margin-top: 10px;
+  float: right;
+  font-size: 1em;
+}
+
+
+
+#about_me .info1 .me img{
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 5px gray;
+  display: block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: none;
+}
+
+#about_me .info1 .me div:last-child{
+  width: 360px;
+  margin-top: 30px;
+}
 
 #about_me ul li{
+  width: 150px;
+  height: 170px;
   line-height: 40px;
   font-size: 1.1em;
-  display: inline-block;
   text-align: center;
-  margin-right: 30px;
+  margin-left: 80px;
+  margin-top: 20px;
+  float: left;
 }
 
 #about_me ul li p{
   margin-top: 20px;
 }
 
-.info1 div{
-  width: 200px;
-  height: 300px;
-  margin-top: 120px;
+#about_me .info1 .my_info{
+  width: 550px;
+  height: 400px;
+  text-align: center;
 }
 
 
@@ -205,14 +252,19 @@ section{
   height: 700px;
   padding-top: 30px;
   margin: auto;
+  background-color: rgb(235,228,224);
   /* background: chartreuse; */
 }
 
 .skill_container{
   width: 1000px;
-  height: 100%;
+  height: 550px;
   margin: auto;
   display: block;
+  padding-top: 30px;
+  /* background-color: rgb(245, 236, 222); */
+  /* border-radius: 10px; */
+  /* box-shadow: 10px 10px 30px 5px gray; */
 }
 
 .skill_container2{
@@ -261,12 +313,32 @@ section{
   border-bottom:1px solid gray;
 }
 
-#familiar>div,#tried>div{
-  width: 100px;
+#familiar>div{
+  width: 75px;
+  height: 30px;
   font-size: 1.3em;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
+
+#skills .skill_container ul{
+  width: 920px;
+  height: 180px;
+  padding-top: 20px;
+  background-color: rgb(211,210,204);
+  border-radius: 20px;
+  padding-left: 10px;
+  box-shadow: 0 10px 20px 3px gray;
+}
+#tried>div{
+  width: 53px;
+  height: 30px;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
 
 #familiar ul li, #tried ul li{
   float: left;
@@ -283,10 +355,9 @@ section{
 }
 
 #familiar, #tried{
-  width: 100%;
+  width: 900px;
   height: 250px;
   margin-left: 50px;
-  margin-top: 50px;
 }
 
 #archiving{
@@ -311,13 +382,14 @@ section{
   position: relative;
   float: left;
   width: 250px;
-  height: 300px;
+  height: 350px;
   border-radius: 10px;
   border: 1px solid rgb(221, 214, 214);
   text-align: center;
   padding-top: 20px;
   margin-top: 50px;
   background: rgb(227,224,221);
+  box-shadow: 10px 10px 15px 5px gray;
 }
 
 .arch_container ul li:first-child{
@@ -381,9 +453,9 @@ section{
   border-radius: 0px 0px 10px 10px;
   border-top: 1px dashed rgb(221, 214, 214);
   padding: 5px;
-  background: rgb(197,182,169);
-  /* color: rgb(233, 219, 219); */
-  color: white;
+  /* background: rgb(197,182,169); */
+  background: rgb(237, 210, 184);
+  color: rgb(47, 19, 116);
   line-height: 27px;
 }
 
@@ -393,6 +465,7 @@ section{
 
 .explain p:first-child{
   font-family: 'Lato', sans-serif;
+  color: black;
 }
 
 #project{
@@ -423,6 +496,7 @@ section{
   background: rgb(194, 179, 177);
   border-radius: 10px;
   float: left;
+  box-shadow: 20px 20px 15px 10px gray;
 
 }
 #project .java_project ul li:first-child{
@@ -498,6 +572,7 @@ section{
 
 #project .explain_link p a:hover{
   text-decoration: underline;
+  color: black;
 }
 
 .c_project{
@@ -518,6 +593,7 @@ section{
   height: 400px;
   background: rgb(194, 179, 177);
   border-radius: 10px;
+  box-shadow: 20px 20px 15px 10px gray;
 }
 
 .c_project .caption_c{
@@ -577,6 +653,9 @@ footer{
   color: black;
 }
 
+
+
+
 @media (max-width: 1025px){
   .what_language img[alt="phone"]{
     display:none;
@@ -607,10 +686,50 @@ footer{
     font-size: 1.5em;
   }
 
-  #menu li{
-    margin-right: 35px;
-    float: left;
+  #menu{
+    display: none;
   }
+
+  #hidden_menu{
+    float: right;
+    display: block;
+  }
+  
+
+  #hidden_menu .hamburger{
+    float: right;
+    width: 50px;
+    height: 50px;
+    background: rgba(230, 222, 222, 0.774);
+    border-radius: 50%;
+    padding: 12px;
+    margin: 25px;
+    margin-bottom: 25px;
+  }
+
+  #hidden_menu .hamburger:hover{
+    cursor: pointer;
+    background: rgb(238, 221, 185)
+  }
+
+#hidden_menu .hiddenMenu{
+  width: 180px;
+  height: 200px;
+  display: none;
+  line-height: 50px;
+  text-align: center;
+  background: rgb(228, 224, 224);
+  clear: both;
+}
+
+#hidden_menu .hiddenMenu ul li:hover{
+  width: 180px;
+  height: 50px;
+  background: rgb(194, 179, 177);
+}
+
+
+
 
   #profile{
     display:none;
@@ -671,6 +790,10 @@ footer{
     /* background-color: rgb(174, 188, 226); */
   }
 
+  #about_me img[alt="leaf1"]{
+    top: 630px;
+  }
+
   .info1{
     width: 700px;
     height: 600px;
@@ -681,6 +804,15 @@ footer{
     font-size: 1.5em;
   }
 
+  #about_me .info1 .me{
+    display: none;
+  }
+
+  #about_me .info1 .my_info{
+    width: 700px;
+    height: 600px;
+  }
+
   .main_name_about{
     margin: auto;
     text-align: center;
@@ -689,7 +821,7 @@ footer{
     border-bottom:1px solid gray;
   }
 
-  #about_me ul li{
+  #about_me .my_info ul li{
     width: 200px;
     height: 100%;
     line-height: 40px;
@@ -725,6 +857,7 @@ footer{
     font-size: 2.5em;
     border-bottom:1px solid gray;
   }
+
 
   .skill_container{
     display: none;
@@ -777,8 +910,6 @@ footer{
   .skill_container2 .html_box{
     background: rgb(199, 172, 179);
     border-radius: 0 20px 20px 0;
-    width: 450px;
-    height: 50px;
     animation: box2 2s 0.5s forwards;
   }
 
@@ -825,35 +956,35 @@ footer{
 
   @keyframes box1{
     from {width: 0; height: 50px;}
-    to {width: 500px; height: 50px;}
+    to {width: 500px; height: 50px;box-shadow: 10px 0px 10px 3px gray;}
   }
   @keyframes box2{
     from {width: 0; height: 50px;}
-    to {width: 450px; height: 50px;}
+    to {width: 450px; height: 50px;box-shadow: 10px 0px 10px 3px gray;}
   }
   @keyframes box3{
     from {width: 0; height: 50px;}
-    to {width: 450px; height: 50px;}
+    to {width: 450px; height: 50px;box-shadow: 10px 0px 10px 3px gray;}
   }
   @keyframes box4{
     from {width: 0; height: 50px;}
-    to {width: 400px; height: 50px;}
+    to {width: 400px; height: 50px;box-shadow: 10px 0px 10px 3px gray;}
   }
   @keyframes box5{
     from {width: 0; height: 50px;}
-    to {width: 300px; height: 50px;}
+    to {width: 300px; height: 50px;box-shadow: 10px 0px 10px 3px gray;}
   }
   @keyframes box6{
     from {width: 0; height: 50px;}
-    to {width: 300px; height: 50px;}
+    to {width: 300px; height: 50px;box-shadow: 10px 0px 10px 3px gray;}
   }
   @keyframes box7{
     from {width: 0; height: 50px;}
-    to {width: 200px; height: 50px;}
+    to {width: 200px; height: 50px;box-shadow: 10px 0px 10px 3px gray;}
   }
   @keyframes box8{
     from {width: 0; height: 50px;}
-    to {width: 150px; height: 50px;}
+    to {width: 150px; height: 50px;box-shadow: 10px 0px 10px 3px gray;}
   }
 
   .arch_container{
@@ -875,9 +1006,8 @@ footer{
     border-radius: 0px 0px 10px 10px;
     border-top: 1px dashed rgb(221, 214, 214);
     padding: 5px;
-    background: rgb(197,182,169);
-    /* color: rgb(233, 219, 219); */
-    color: white;
+    background: rgb(237, 210, 184);
+    color: rgb(38, 18, 87);
     line-height: 27px;
   }
 
@@ -920,7 +1050,7 @@ footer{
   
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 
   .what_language img:not([alt="phone"]){
     display:none;
@@ -929,15 +1059,11 @@ footer{
     display:block;
   }
 
-
-  #container header{
-    display: none;
-  }
-  nav{
-    display: none;
+  #top .logo_top{
+    margin: 18px 30px;
   }
 
-
+  
 
   #menu li{
     float: left;
@@ -946,6 +1072,15 @@ footer{
   #menu li:not(:last-child){
     margin-right: 20px;
     float: left;
+  }
+
+  #hidden_menu{
+    width: 140px;
+  }
+
+  #hidden_menu .hiddenMenu{
+    width: 100%;
+    font-size: 0.8em;
   }
 
   
@@ -958,7 +1093,7 @@ footer{
 
   section{
     width: 100%;
-    height: 4200px;
+    height: 4400px;
     overflow: hidden;
   }
 
@@ -990,10 +1125,6 @@ footer{
       font-size: 0.6em;
     }
 
-
-
-
-
     #about_me{
       width: 100%;
       height: 700px;
@@ -1001,6 +1132,13 @@ footer{
       padding-top: 50px;
       background: rgb(241, 240, 240);
       /* background-color: rgb(174, 188, 226); */
+    }
+
+    #about_me img[alt="leaf1"]{
+      display: none;
+    }
+    #about_me img[alt="leaf2"]{
+      display: none;
     }
   
     .info1{
@@ -1021,8 +1159,8 @@ footer{
       border-bottom:1px solid gray;
     }
   
-    #about_me ul li{
-      width: 140px;
+    #about_me .my_info ul li{
+      width: 100px;
       height: 100%;
       line-height: 40px;
       font-size: 0.6em;
@@ -1033,8 +1171,8 @@ footer{
     }
   
     #about_me ul li:nth-child(1),#about_me ul li:nth-child(3){
-      margin-right: 60px;
-      margin-left: 0px;
+      margin-right: 10px;
+      margin-left: 30px;
     }
   
     .info1 div{
@@ -1045,7 +1183,7 @@ footer{
   
     #skills{
       width: 100%;
-      height: 650px;
+      height: 700px;
       margin: auto;
       padding: 0;
       /* background: chartreuse; */
@@ -1096,65 +1234,80 @@ footer{
     .skill_container3 .java_box{
       width: 250px;
       height: 30px;
-      background: rgb(215, 191, 198);
+      /* background: rgb(215, 191, 198); */
+      background: linear-gradient(45deg, rgb(81,11,121),rgb(150,135,192));
       border-radius: 0 20px 20px 0;
       margin-top: 15px;
-      
+      box-shadow: 10px 0px 10px 3px gray;
     }
   
     .skill_container3 .html_box{
-      background: rgb(199, 172, 179);
+      /* background: rgb(199, 172, 179); */
+      background: linear-gradient(45deg, rgb(176,163,216),rgb(223,177,249));
       border-radius: 0 20px 20px 0;
       width: 230px;
       height: 30px;
+      box-shadow: 10px 0px 10px 3px gray;
     }
   
     .skill_container3 .css_box{
       width: 230px;
       height: 30px;
-      background: rgb(177, 143, 153);
+      /* background: rgb(177, 143, 153); */
+      background: linear-gradient(45deg, rgb(117,89,199),rgb(223,177,249));
       border-radius: 0 20px 20px 0;
+      box-shadow: 10px 0px 10px 3px gray;
     }
   
     .skill_container3 .c_box{
       width: 180px;
       height: 30px;
-      background: rgb(179, 146, 155);
+      /* background: rgb(179, 146, 155); */
+      background: linear-gradient(45deg, rgb(117,89,199),rgb(111,102,137));
       border-radius: 0 20px 20px 0;
+      box-shadow: 10px 0px 10px 3px gray;
     }
   
     .skill_container3 .python_box{
       width: 150px;
       height: 30px;
-      background: rgb(158, 123, 133);
+      /* background: rgb(158, 123, 133); */
+      background: linear-gradient(45deg, rgb(117,89,199),rgb(111,102,137));
       border-radius: 0 20px 20px 0;
+      box-shadow: 10px 0px 10px 3px gray;
     }
   
     .skill_container3 .JS_box{
       width: 120px;
       height: 30px;
-      background: rgb(141, 105, 115);
+      /* background: rgb(141, 105, 115); */
+      background: linear-gradient(45deg, rgb(192,183,237),rgb(111,102,137));
       border-radius: 0 20px 20px 0;
+      box-shadow: 10px 0px 10px 3px gray;
   
     }
   
     .skill_container3 .mySQL_box{
       width: 80px;
       height: 30px;
-      background: rgb(121, 86, 95);
+      /* background: rgb(121, 86, 95); */
+      background: linear-gradient(45deg, rgb(197,121,240),rgb(111,102,137));
       border-radius: 0 20px 20px 0;
+      box-shadow: 10px 0px 10px 3px gray;
     }
   
     .skill_container3 .Android_box{
       width: 40px;
       height: 30px;
-      background:rgb(100, 67, 75);
+      /* background:rgb(100, 67, 75); */
+      background: linear-gradient(45deg, rgb(197,121,240),rgb(100, 67, 75));
       border-radius: 0 20px 20px 0;
+      box-shadow: 10px 0px 10px 3px gray;
     }
 
     #archiving{
       width: 100%;
-      height: 1000px;
+      height: 1050px;
       background: rgb(241, 240, 240);
       margin: 20px auto;
       padding-top: 30px;
@@ -1177,7 +1330,7 @@ footer{
       width: 100%;
       height: 200px;
       margin-top: 30px;
-      font-size: 1.4em;
+      font-size: 1.2em;
       text-align: center;
       border-radius: 0px 0px 10px 10px;
       border-top: 1px dashed rgb(221, 214, 214);
@@ -1210,7 +1363,7 @@ footer{
   
      .c_project{
       width: 350px;
-      height: 500px;
+      height: 600px;
       margin: auto;
     }
   
@@ -1240,7 +1393,7 @@ footer{
       top: 20px;
       position: absolute;
       background: rgba(0, 0, 0, 0.6);
-      opacity: 0.7;
+      opacity: 1;
       transition: all 0.6s ease-in-out;
       z-index: 200;
       text-align: center;
@@ -1257,7 +1410,7 @@ footer{
       top: 20px;
       position: absolute;
       background: rgba(0, 0, 0, 0.6);
-      opacity: 0.7;
+      opacity: 1;
       transition: all 0.6s ease-in-out;
       z-index: 200;
       text-align: center;
