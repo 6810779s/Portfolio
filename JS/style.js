@@ -8,7 +8,7 @@ setInterval(function () {
     count = -1;
   }
   count++;
-}, 4000);
+}, 2500);
 
 let slide_container2 = document.querySelector('#profile2 .slider_container');
 let count2 = 0;
@@ -19,7 +19,7 @@ setInterval(function () {
     count2 = -1;
   }
   count2++;
-}, 4000);
+}, 2500);
 
 document.addEventListener('scroll', function () {
   const java_box = document.querySelector('.skill_container2 .java_box');
@@ -34,9 +34,7 @@ document.addEventListener('scroll', function () {
   let currentScrollValue = document.documentElement.scrollTop;
 
 
-  if (currentScrollValue >= 1000) {
-    
-    // zooms();
+  if (currentScrollValue >= 900) {
     java_box.style.animationPlayState = "running";
     html_box.style.animationPlayState = "running";
     css_box.style.animationPlayState = "running";

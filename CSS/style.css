@@ -246,6 +246,10 @@ section{
   text-align: center;
 }
 
+#about_me .info1 .my_info img[alt="email"] + p{
+  margin-right: 10px;
+}
+
 
 #skills{
   width: 100%;
@@ -460,7 +464,7 @@ section{
 }
 
 .explain p{
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .explain p:first-child{
@@ -639,7 +643,7 @@ footer{
 .logo_bottom li{
   margin-top: 10px;
   margin-right: 20px;
-  float: right;
+  float: left;
   font-size: 0.8em;
 }
 
@@ -702,9 +706,13 @@ footer{
     height: 50px;
     background: rgba(230, 222, 222, 0.774);
     border-radius: 50%;
-    padding: 12px;
     margin: 25px;
     margin-bottom: 25px;
+  }
+
+  #hidden_menu .hamburger img{
+    margin-top: 17px;
+    margin-left: 10px;
   }
 
   #hidden_menu .hamburger:hover{
@@ -822,7 +830,7 @@ footer{
   }
 
   #about_me .my_info ul li{
-    width: 200px;
+    width: 250px;
     height: 100%;
     line-height: 40px;
     font-size: 1.1em;
@@ -832,8 +840,8 @@ footer{
   }
 
   #about_me ul li:nth-child(1),#about_me ul li:nth-child(3){
-    margin-right: 70px;
-    margin-left: 80px;
+    margin-right: 35px;
+    margin-left: 40px;
   }
 
   .info1 div{
@@ -1154,25 +1162,25 @@ footer{
     .main_name_about{
       margin: auto;
       text-align: center;
-      width: 170px;
+      width: 190px;
       font-size: 2.5em;
       border-bottom:1px solid gray;
     }
   
     #about_me .my_info ul li{
-      width: 100px;
+      transform: scale(0.8);
+      width: 120px;
       height: 100%;
       line-height: 40px;
       font-size: 0.6em;
       display: inline-block;
       text-align: center;
       margin-top: 65px;
-      margin-right: 0;
+      margin-left: 0;
     }
   
     #about_me ul li:nth-child(1),#about_me ul li:nth-child(3){
-      margin-right: 10px;
-      margin-left: 30px;
+      margin-left: 35px;
     }
   
     .info1 div{
@@ -1203,10 +1211,6 @@ footer{
     }
   
     .skill_container2{
-      display: none;
-    }
-
-    .skill_container3{
       width: 350px;
       height: 1070px;
       margin: auto;
@@ -1214,95 +1218,140 @@ footer{
       display: flex;
       flex-direction: row;
     }
+
+    /* .skill_container3{
+      width: 350px;
+      height: 1070px;
+      margin: auto;
+      display: block;
+      display: flex;
+      flex-direction: row;
+      display: none;
+    } */
   
-    .skill_container3 .what_language{
+    .skill_container2 .what_language{
       width: 60px;
       height: 100%;
     }
   
-    .skill_container3 .languages_skill{
+    .skill_container2 .languages_skill{
       width: 290px;
       height: 100%;
     }
   
   
-    .skill_container3 ul li{
+    .skill_container2 ul li{
       width: 100px;
       height: 80px;
     }
   
-    .skill_container3 .java_box{
-      width: 250px;
-      height: 30px;
-      /* background: rgb(215, 191, 198); */
-      background: linear-gradient(45deg, rgb(81,11,121),rgb(150,135,192));
+    .skill_container2 .java_box{
       border-radius: 0 20px 20px 0;
       margin-top: 15px;
-      box-shadow: 10px 0px 10px 3px gray;
+      /* background: rgb(215, 191, 198); */
+      background: linear-gradient(45deg, rgb(81,11,121),rgb(150,135,192));
+      animation: box9 2s 0.5s forwards;
     }
   
-    .skill_container3 .html_box{
-      /* background: rgb(199, 172, 179); */
+    .skill_container2 .html_box{
       background: linear-gradient(45deg, rgb(176,163,216),rgb(223,177,249));
       border-radius: 0 20px 20px 0;
-      width: 230px;
-      height: 30px;
-      box-shadow: 10px 0px 10px 3px gray;
+      animation: box10 2s 0.5s forwards;
+      
     }
   
-    .skill_container3 .css_box{
-      width: 230px;
-      height: 30px;
+    .skill_container2 .css_box{
       /* background: rgb(177, 143, 153); */
       background: linear-gradient(45deg, rgb(117,89,199),rgb(223,177,249));
       border-radius: 0 20px 20px 0;
-      box-shadow: 10px 0px 10px 3px gray;
+      animation: box11 2s 0.5s forwards;
+
+      
     }
   
-    .skill_container3 .c_box{
-      width: 180px;
-      height: 30px;
+    .skill_container2 .c_box{
+      
       /* background: rgb(179, 146, 155); */
       background: linear-gradient(45deg, rgb(117,89,199),rgb(111,102,137));
+      animation: box12 2s 0.5s forwards;
       border-radius: 0 20px 20px 0;
-      box-shadow: 10px 0px 10px 3px gray;
     }
   
-    .skill_container3 .python_box{
-      width: 150px;
-      height: 30px;
+    .skill_container2 .python_box{
       /* background: rgb(158, 123, 133); */
       background: linear-gradient(45deg, rgb(117,89,199),rgb(111,102,137));
+      animation: box13 2s 0.5s forwards;
       border-radius: 0 20px 20px 0;
-      box-shadow: 10px 0px 10px 3px gray;
     }
   
-    .skill_container3 .JS_box{
-      width: 120px;
-      height: 30px;
-      /* background: rgb(141, 105, 115); */
+    .skill_container2 .JS_box{
       background: linear-gradient(45deg, rgb(192,183,237),rgb(111,102,137));
       border-radius: 0 20px 20px 0;
-      box-shadow: 10px 0px 10px 3px gray;
+      animation: box14 2s 0.5s forwards;
   
     }
   
-    .skill_container3 .mySQL_box{
-      width: 80px;
-      height: 30px;
+    .skill_container2 .mySQL_box{
       /* background: rgb(121, 86, 95); */
       background: linear-gradient(45deg, rgb(197,121,240),rgb(111,102,137));
       border-radius: 0 20px 20px 0;
-      box-shadow: 10px 0px 10px 3px gray;
+      animation: box15 2s 0.5s forwards;
     }
   
-    .skill_container3 .Android_box{
-      width: 40px;
-      height: 30px;
+    .skill_container2 .Android_box{
       /* background:rgb(100, 67, 75); */
       background: linear-gradient(45deg, rgb(197,121,240),rgb(100, 67, 75));
       border-radius: 0 20px 20px 0;
-      box-shadow: 10px 0px 10px 3px gray;
+      animation: box16 2s 0.5s forwards;
+    }
+
+    @keyframes box9{
+      from {width: 0; height: 50px;}
+      to {width: 250px;
+        height: 30px;
+        box-shadow: 10px 0px 10px 3px gray;}
+    }
+    @keyframes box10{
+      from {width: 0; height: 50px;}
+      to {width: 230px;
+        height: 30px;
+        box-shadow: 10px 0px 10px 3px gray;}
+    }
+    @keyframes box11{
+      from {width: 0; height: 50px;}
+      to {box-shadow: 10px 0px 10px 3px gray;
+          width: 230px;
+          height: 30px;}
+    }
+    @keyframes box12{
+      from {width: 0; height: 50px;}
+      to {width: 180px;
+          height: 30px;
+          box-shadow: 10px 0px 10px 3px gray;}
+    }
+    @keyframes box13{
+      from {width: 0; height: 50px;}
+      to {box-shadow: 10px 0px 10px 3px gray;
+          width: 150px;
+          height: 30px;}
+    }
+    @keyframes box14{
+      from {width: 0; height: 50px;}
+      to {box-shadow: 10px 0px 10px 3px gray;
+          width: 120px;
+          height: 30px;}
+    }
+    @keyframes box15{
+      from {width: 0; height: 50px;}
+      to {box-shadow: 10px 0px 10px 3px gray;
+          width: 80px;
+          height: 30px;}
+    }
+    @keyframes box16{
+      from {width: 0; height: 50px;}
+      to {box-shadow: 10px 0px 10px 3px gray;
+          width: 40px;
+          height: 30px;}
     }
 
     #archiving{
