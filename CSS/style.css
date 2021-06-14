@@ -954,53 +954,53 @@ footer{
     background: rgb(215, 191, 198);
     border-radius: 0 20px 20px 0;
     margin-top: 25px;
-    animation: box1 2s 0.5s forwards;
+    /* animation: box1 2s 0.5s forwards; */
     
   }
 
   .skill_container2 .html_box{
     background: rgb(199, 172, 179);
     border-radius: 0 20px 20px 0;
-    animation: box2 2s 0.5s forwards;
+    /* animation: box2 2s 0.5s forwards; */
   }
 
   .skill_container2 .css_box{
 
-    animation: box3 2s 0.5s forwards;
+    /* animation: box3 2s 0.5s forwards; */
     background: rgb(177, 143, 153);
     border-radius: 0 20px 20px 0;
   }
 
   .skill_container2 .c_box{
 
-    animation: box4 2s 0.5s forwards;
+    /* animation: box4 2s 0.5s forwards; */
     background: rgb(179, 146, 155);
     border-radius: 0 20px 20px 0;
   }
 
   .skill_container2 .python_box{
 
-    animation: box5 2s 0.5s forwards;
+    /* animation: box5 2s 0.5s forwards; */
     background: rgb(158, 123, 133);
     border-radius: 0 20px 20px 0;
   }
 
   .skill_container2 .JS_box{
 
-    animation: box6 2s 0.5s forwards;
+    /* animation: box6 2s 0.5s forwards; */
     background: rgb(141, 105, 115);
     border-radius: 0 20px 20px 0;
 
   }
 
   .skill_container2 .mySQL_box{
-    animation: box7 2s 0.5s forwards;
+    /* animation: box7 2s 0.5s forwards; */
     background: rgb(121, 86, 95);
     border-radius: 0 20px 20px 0;
   }
 
   .skill_container2 .Android_box{
-    animation: box8 2s 0.5s forwards;
+    /* animation: box8 2s 0.5s forwards; */
     background:rgb(100, 67, 75);
     border-radius: 0 20px 20px 0;
   }
@@ -1278,7 +1278,7 @@ footer{
       text-align: center;
       width: 130px;
       height: 40px;
-      padding-top: 6px;
+      padding-top: 5.5px;
       font-size: 1.5em;
       border-bottom:1px solid gray;
     }
@@ -1316,7 +1316,7 @@ footer{
     .main_name_skills{
       margin: 50px auto;
       text-align: center;
-      padding-top: 6px;
+      padding-top: 5.5px;
       width: 80px;
       height: 40px;
       font-size: 1.5em;
@@ -1327,8 +1327,13 @@ footer{
       display: none;
       
     }
-  
+
     .skill_container2{
+      display: none;
+      
+    }
+  
+    .skill_container3{
       width: 350px;
       height: 800px;
       padding: 0;
@@ -1338,96 +1343,89 @@ footer{
       flex-direction: row;
     }
 
-    /* .skill_container3{
-      width: 350px;
-      height: 1070px;
-      margin: auto;
-      display: block;
-      display: flex;
-      flex-direction: row;
-      display: none;
-    } */
   
-    .skill_container2 .what_language{
+    .skill_container3 .what_language{
       width: 60px;
       height: 650px;
       padding-left: 10px;
+      background: rgb(185, 197, 223);
+      box-shadow: 0px 10px 19px 10px gray;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
     }
 
-    .skill_container2 .what_language img{
+    .skill_container3 .what_language img{
       transform: scale(0.7);
     }
 
   
-    .skill_container2 .languages_skill{
+    .skill_container3 .languages_skill{
       width: 290px;
       height: 650px;
+      background: rgb(200, 209, 228);
+    box-shadow: 0px 10px 30px 2px gray;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
     }
   
   
-    .skill_container2 ul li{
+    .skill_container3 ul li{
       width: 100px;
       height: 80px;
     }
   
-    .skill_container2 .java_box{
+    .skill_container3 .java_box{
       border-radius: 0 20px 20px 0;
       margin-top: 15px;
-      /* background: rgb(215, 191, 198); */
       background: linear-gradient(45deg, rgb(81,11,121),rgb(150,135,192));
-      animation: box9 2s 0.5s forwards;
+      /* animation: box9 2s 0.5s forwards; */
     }
   
-    .skill_container2 .html_box{
+    .skill_container3 .html_box{
       background: linear-gradient(45deg, rgb(176,163,216),rgb(223,177,249));
       border-radius: 0 20px 20px 0;
-      animation: box10 2s 0.5s forwards;
+      /* animation: box10 2s 0.5s forwards; */
       
     }
   
-    .skill_container2 .css_box{
-      /* background: rgb(177, 143, 153); */
+    .skill_container3 .css_box{
       background: linear-gradient(45deg, rgb(117,89,199),rgb(223,177,249));
       border-radius: 0 20px 20px 0;
-      animation: box11 2s 0.5s forwards;
+      /* animation: box11 2s 0.5s forwards; */
 
       
     }
   
-    .skill_container2 .c_box{
-      
-      /* background: rgb(179, 146, 155); */
+    .skill_container3 .c_box{
       background: linear-gradient(45deg, rgb(117,89,199),rgb(111,102,137));
-      animation: box12 2s 0.5s forwards;
+      /* animation: box12 2s 0.5s forwards; */
       border-radius: 0 20px 20px 0;
     }
   
-    .skill_container2 .python_box{
+    .skill_container3 .python_box{
       /* background: rgb(158, 123, 133); */
       background: linear-gradient(45deg, rgb(117,89,199),rgb(111,102,137));
-      animation: box13 2s 0.5s forwards;
+      /* animation: box13 2s 0.5s forwards; */
       border-radius: 0 20px 20px 0;
     }
   
-    .skill_container2 .JS_box{
+    .skill_container3 .JS_box{
       background: linear-gradient(45deg, rgb(192,183,237),rgb(111,102,137));
       border-radius: 0 20px 20px 0;
-      animation: box14 2s 0.5s forwards;
+      /* animation: box14 2s 0.5s forwards; */
   
     }
   
-    .skill_container2 .mySQL_box{
-      /* background: rgb(121, 86, 95); */
+    .skill_container3 .mySQL_box{
       background: linear-gradient(45deg, rgb(197,121,240),rgb(111,102,137));
       border-radius: 0 20px 20px 0;
-      animation: box15 2s 0.5s forwards;
+      /* animation: box15 2s 0.5s forwards; */
     }
   
-    .skill_container2 .Android_box{
-      /* background:rgb(100, 67, 75); */
+    .skill_container3 .Android_box{
       background: linear-gradient(45deg, rgb(197,121,240),rgb(100, 67, 75));
       border-radius: 0 20px 20px 0;
-      animation: box16 2s 0.5s forwards;
+      /* animation: box16 2s 0.5s forwards; */
     }
 
     @keyframes box9{
@@ -1567,14 +1565,14 @@ footer{
     .main_name_arch{
       width: 120px;
       height: 40px;
-      padding: 6px;
+      padding: 5.5px;
       font-size: 1.5em;
     }
   
     .main_name_project{
       width: 100px;
       height: 40px;
-      padding-top: 6px;
+      padding-top: 5.5px;
       font-size: 1.5em;
     }
    
