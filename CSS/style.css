@@ -76,7 +76,7 @@ nav{
 section{
   width: 100%;
   /* height: 3060px; */
-  height: 3450px;
+  height: 4000px;
   overflow: hidden;
 }
 
@@ -199,11 +199,10 @@ section{
   flex-direction: column;
 }
 
-
 #about_me .info1 .me div:last-child p{
   width: 190px;
   height: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   float: right;
   font-size: 1em;
 }
@@ -221,7 +220,7 @@ section{
 }
 
 #about_me .info1 .me div:last-child{
-  width: 360px;
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -474,7 +473,7 @@ section{
 
 #project{
   width: 100%;
-  height: 1000px;
+  height: 1500px;
   padding-top: 30px;
   /* background-color: indianred; */
   margin: auto;
@@ -529,7 +528,7 @@ section{
   color: aliceblue;
 }
 
-.java_project, .c_project{
+.java_project, .c_project, .web_project{
   width: 1000px;
   height: 500px;
   margin: auto;
@@ -580,11 +579,11 @@ section{
   color: black;
 }
 
-.c_project{
+.c_project,.web_project{
   margin-top: 20px;
 }
 
-.c_project div{
+.c_project div, .web_project div{
   width: 200px;
   font-size: 1.3em;
   font-weight: 700;
@@ -592,7 +591,7 @@ section{
 }
 
 
-#project .c_project ul li{
+#project .c_project ul li, #project .web_project ul li{
   position: relative;
   width: 350px;
   height: 400px;
@@ -601,7 +600,7 @@ section{
   box-shadow: 20px 20px 15px 10px gray;
 }
 
-.c_project .caption_c{
+.c_project .caption_c, .web_project .caption_web{
   width: 300px;
   height: 217px;
   left: 25px;
@@ -620,6 +619,15 @@ section{
 .c_project ul li:hover .caption_c{
   opacity: 1;
   color: aliceblue;
+}
+
+.web_project ul li:hover .caption_web{
+  opacity: 1;
+  color: aliceblue;
+}
+
+.web_project .explain_link p{
+  padding-top: 20px;
 }
 
 footer{
@@ -747,7 +755,7 @@ footer{
     width: 100%;
     /* height: 3060px; */
     background: rgb(237, 233, 229);
-    height: 5150px;
+    height: 5750px;
     overflow: hidden;
   }
 
@@ -1094,7 +1102,7 @@ footer{
    border-bottom: 5px solid rgb(179,91,65);
   }
 
-   .c_project{
+   .c_project, .web_project{
     width: 700px;
     height: 570px;
     margin: auto;
@@ -1125,7 +1133,7 @@ footer{
     font-size: 2.5em;
   }
  
-  .java_project div:first-child, .c_project div:first-child{
+  .java_project div:first-child, .c_project div:first-child, .web_project div:first-child{
     font-size: 1.6em;
   }
 
@@ -1134,13 +1142,19 @@ footer{
     margin-bottom: 50px;
   }
 
-  .c_project ul li {
+  .c_project ul li ,.web_project ul li{
     margin-left: 175px;
   }
 
   .c_project div:first-child{
     margin-left: 300px;
     width: 110px;
+    height: 35px;
+   border-bottom: 5px solid rgb(179,91,65);
+  }
+  .web_project div:first-child{
+    margin-left: 275px;
+    width: 150px;
     height: 35px;
    border-bottom: 5px solid rgb(179,91,65);
   }
@@ -1215,7 +1229,7 @@ footer{
 
   section{
     width: 100%;
-    height: 4800px;
+    height: 5400px;
     overflow: hidden;
   }
 
@@ -1554,8 +1568,15 @@ footer{
       margin-left: 130px;
      border-bottom: 5px solid rgb(179,91,65);
     }
+
+    .web_project div:first-child{
+      width: 120px;
+      height: 35px;
+      margin-left: 115px;
+     border-bottom: 5px solid rgb(179,91,65);
+    }
   
-     #project .c_project{
+     #project .c_project #project .web_project{
       width: 350px;
       height: 600px;
       padding-top: 30px;
@@ -1576,7 +1597,7 @@ footer{
       font-size: 1.5em;
     }
    
-    .java_project div:first-child, .c_project div:first-child{
+    .java_project div:first-child, .c_project div:first-child, .web_project div:first-child{
       font-size: 1.3em;
     }
 
@@ -1618,7 +1639,7 @@ footer{
       padding: 0;
     }
 
-    .c_project .caption_c{
+    .c_project .caption_c, .web_project .caption_web{
       width: 240px;
       height: 174px;
       left: 30px;
@@ -1635,13 +1656,13 @@ footer{
       color: white;
     }
   
-    #project .c_project ul li {
+    #project .c_project ul li, #project .web_project ul li {
       width: 300px;
       margin-left: 25px;
       margin-bottom: 50px;
     }
 
-    #project .c_project img{
+    #project .c_project img, #project .web_project img{
       transform: scale(0.8);
       margin: 0;
     }
