@@ -34,7 +34,7 @@ document.addEventListener('scroll', function () {
   let currentScrollValue = document.documentElement.scrollTop;
 
 
-  if (currentScrollValue >= 900) {
+  if (currentScrollValue >= 1000) {
     java_box.style.animationPlayState = "running";
     html_box.style.animationPlayState = "running";
     css_box.style.animationPlayState = "running";

@@ -368,7 +368,7 @@ section{
   width: 100%;
   height: 600px;
   background: rgb(241, 240, 240);
-  margin: 20px auto;
+  margin: auto;
   padding-top: 30px;
 }
 
@@ -475,6 +475,7 @@ section{
 #project{
   width: 100%;
   height: 1000px;
+  padding-top: 30px;
   /* background-color: indianred; */
   margin: auto;
 }
@@ -624,7 +625,7 @@ section{
 footer{
   width: 100%;
   height: 150px;
-  background: rgb(241, 240, 240);
+  background-color: rgb(246,245,245);
 }
 
 .logo_bottom{
@@ -676,7 +677,7 @@ footer{
   nav{
     width: 100%;
     height: 100px;
-    background: rgb(241, 240, 240);
+    background: rgb(236, 231, 217);
     position: fixed;
     z-index: 999;
   }
@@ -745,7 +746,8 @@ footer{
   section{
     width: 100%;
     /* height: 3060px; */
-    height: 4600px;
+    background: rgb(237, 233, 229);
+    height: 5150px;
     overflow: hidden;
   }
 
@@ -787,10 +789,9 @@ footer{
 
   #about_me{
     width: 100%;
-    height: 700px;
+    height: 800px;
     margin: auto;
-    padding-top: 50px;
-    background: rgb(241, 240, 240);
+    background: rgb(237, 233, 229);
     /* background-color: rgb(174, 188, 226); */
   }
 
@@ -810,35 +811,65 @@ footer{
 
   #about_me .info1 .me{
     display: none;
+
   }
 
   #about_me .info1 .my_info{
     width: 700px;
-    height: 600px;
+    height: 550px;
+    background-color: rgba(218, 208, 219, 0.274);
+    border-radius: 20px;
   }
 
   .main_name_about{
     margin: auto;
     text-align: center;
-    width: 170px;
     font-size: 2.5em;
-    border-bottom:1px solid gray;
+    height: 80px;
+    background-color: rgb(219, 217, 226);
+    padding-top: 16px;
+    border-bottom: none;
+    /* border-bottom:1px solid gray; */
+    width: 200px;
+    border-radius: 50px;
   }
 
   #about_me .my_info ul li{
-    width: 250px;
-    height: 100%;
+    width: 350px;
+    height: 275px;
+    background-color: rgb(176,163,216);
     line-height: 40px;
     font-size: 1.1em;
     display: inline-block;
     text-align: center;
-    margin-top: 65px;
+    /* margin-top: 65px; */
+    margin: 0;
+    padding-top: 55px;
+
   }
 
-  #about_me ul li:nth-child(1),#about_me ul li:nth-child(3){
+  /* #about_me ul li:nth-child(1),#about_me ul li:nth-child(3){
     margin-right: 35px;
     margin-left: 40px;
+  } */
+
+  #about_me ul li:nth-child(1){
+    background: linear-gradient(to bottom,rgb(177,166,189),rgb(200,187,199));
+    border-top-left-radius: 50px;
   }
+  #about_me ul li:nth-child(2){
+    background: linear-gradient(to bottom,rgb(150, 132, 168),rgb(186, 165, 209));
+    border-top-right-radius: 50px;
+  }
+  #about_me ul li:nth-child(3){
+    background: linear-gradient(to bottom,rgb(189, 160, 219),rgb(151, 138, 165));
+    border-bottom-left-radius: 50px;
+  }
+  #about_me ul li:nth-child(4){
+    background: linear-gradient(to bottom,rgb(176,163,216),rgb(208, 200, 240));
+    border-bottom-right-radius: 50px;
+  }
+
 
   .info1 div{
     width: 100%;
@@ -848,18 +879,26 @@ footer{
 
   #skills{
     width: 100%;
-    height: 1150px;
+    height: 1300px;
     margin: auto;
-    padding: 0;
+    padding-top: 50px;
+    background: rgb(237, 233, 229);
+    /* background-color: rgb(246, 245, 245); */
     /* background: chartreuse; */
   }
 
   .main_name_skills{
-    margin: 50px auto;
+    margin: auto;
     text-align: center;
-    width: 100px;
+    height: 80px;
+    background-color: rgb(219, 217, 226);
+    /* background-color: rgb(208, 220, 235); */
+    border-radius: 50px;
+    padding-top: 16px;
     font-size: 2.5em;
-    border-bottom:1px solid gray;
+    width: 150px;
+    border-bottom: none;
+    /* border-bottom:1px solid gray; */
   }
 
 
@@ -875,6 +914,7 @@ footer{
     display: block;
     display: flex;
     flex-direction: row;
+    padding-top: 50px;
 
   }
 
@@ -883,15 +923,22 @@ footer{
   }
 
   .skill_container2 .what_language{
-    width: 130px;
+    width: 150px;
     height: 100%;
+    padding-left: 27px;
+    background: rgb(185, 197, 223);
+    box-shadow: 0px 10px 19px 10px gray;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
   }
 
   .skill_container2 .languages_skill{
-    width: 500px;
-    height: 1070px;
-    opacity: 0;
-    opacity: 1;
+    width: 570px;
+    height: 100%;
+    background: rgb(200, 209, 228);
+    box-shadow: 0px 10px 30px 2px gray;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
 
 
@@ -991,14 +1038,23 @@ footer{
     to {width: 150px; height: 50px;box-shadow: 10px 0px 10px 3px gray;}
   }
 
+  #archiving{
+    background: rgb(237, 233, 229);
+  }
   .arch_container{
     width: 700px;
-    height: 100%;
+    height: 460px;
     margin:auto;
+    background: rgb(230,214,220);
+    border-radius: 50px;
+    box-shadow: 0 -10px 50px 5px gray;
+    
   }
 
+
   .arch_container ul li:first-child{
-    margin-right: 200px;
+    margin-right: 100px;
+    margin-left: 50px;
   }
 
   #archiving .explain{
@@ -1015,26 +1071,57 @@ footer{
     line-height: 27px;
   }
 
+  #project{
+    padding-top: 140px;
+  }
 
   .java_project{
     width: 700px;
-    height: 1000px;
+    height: 1050px;
     margin: auto;
+    padding-top: 30px;
+    background: rgb(229,226,227);
+    box-shadow: 0 -10px 50px 5px gray;
+    border-radius: 50px;
+    margin-top: 50px;
+  }
+
+
+  .java_project div:first-child{
+    margin-left: 275px;
+    width: 145px;
+    height: 35px;
+   border-bottom: 5px solid rgb(179,91,65);
   }
 
    .c_project{
     width: 700px;
-    height: 500px;
+    height: 570px;
     margin: auto;
+    padding-top: 50px;
+    background: rgb(229,226,227);
+    box-shadow: 0 -10px 50px 5px gray;
+    border-radius: 50px;
+    margin-top: 30px;
   }
 
   .main_name_arch{
-    width: 170px;
+    width: 200px;
+    height: 80px;
+    border-bottom: none;
+    background-color: rgb(219, 217, 226);
+    padding-top: 16px;
+    border-radius: 50px;
     font-size: 2.5em;
   }
 
   .main_name_project{
-    width: 130px;
+   width: 200px;
+   height: 80px;
+   border-bottom: none;
+   background-color: rgb(219, 217, 226);
+   padding-top: 16px;
+   border-radius: 50px;
     font-size: 2.5em;
   }
  
@@ -1051,6 +1138,18 @@ footer{
     margin-left: 175px;
   }
 
+  .c_project div:first-child{
+    margin-left: 300px;
+    width: 110px;
+    height: 35px;
+   border-bottom: 5px solid rgb(179,91,65);
+  }
+
+  footer{
+    color: black;
+    background-color: rgb(236, 231, 217);
+  }
+
   
 }
 
@@ -1063,10 +1162,19 @@ footer{
     display:block;
   }
 
+  #container header{
+    width: 100%;
+    height: 80px;
+  }
+
   #top .logo_top{
     margin: 18px 30px;
   }
 
+  nav{
+    width: 100%;
+    height: 80px;
+  }
   
 
   #menu li{
@@ -1079,11 +1187,21 @@ footer{
   }
 
   #hidden_menu{
-    width: 140px;
+    width: 120px;
+    height: 250px;
   }
+  #hidden_menu .hamburger{
+    margin: 0;
+    margin-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  
 
   #hidden_menu .hiddenMenu{
     width: 100%;
+    
     font-size: 0.8em;
   }
 
@@ -1097,7 +1215,7 @@ footer{
 
   section{
     width: 100%;
-    height: 4400px;
+    height: 4800px;
     overflow: hidden;
   }
 
@@ -1158,8 +1276,10 @@ footer{
     .main_name_about{
       margin: auto;
       text-align: center;
-      width: 190px;
-      font-size: 2.5em;
+      width: 130px;
+      height: 40px;
+      padding-top: 6px;
+      font-size: 1.5em;
       border-bottom:1px solid gray;
     }
   
@@ -1171,12 +1291,12 @@ footer{
       font-size: 0.6em;
       display: inline-block;
       text-align: center;
-      margin-top: 65px;
       margin-left: 0;
+      background: none;
     }
   
     #about_me ul li:nth-child(1),#about_me ul li:nth-child(3){
-      margin-left: 35px;
+      margin-left: 58px;
     }
   
     .info1 div{
@@ -1187,7 +1307,7 @@ footer{
   
     #skills{
       width: 100%;
-      height: 700px;
+      height: 800px;
       margin: auto;
       padding: 0;
       /* background: chartreuse; */
@@ -1196,8 +1316,10 @@ footer{
     .main_name_skills{
       margin: 50px auto;
       text-align: center;
-      width: 100px;
-      font-size: 2.5em;
+      padding-top: 6px;
+      width: 80px;
+      height: 40px;
+      font-size: 1.5em;
       border-bottom:1px solid gray;
     }
   
@@ -1208,7 +1330,8 @@ footer{
   
     .skill_container2{
       width: 350px;
-      height: 1070px;
+      height: 800px;
+      padding: 0;
       margin: auto;
       display: block;
       display: flex;
@@ -1227,12 +1350,18 @@ footer{
   
     .skill_container2 .what_language{
       width: 60px;
-      height: 100%;
+      height: 650px;
+      padding-left: 10px;
     }
+
+    .skill_container2 .what_language img{
+      transform: scale(0.7);
+    }
+
   
     .skill_container2 .languages_skill{
       width: 290px;
-      height: 100%;
+      height: 650px;
     }
   
   
@@ -1352,17 +1481,15 @@ footer{
 
     #archiving{
       width: 100%;
-      height: 1050px;
+      height: 1150px;
       background: rgb(241, 240, 240);
       margin: 20px auto;
       padding-top: 30px;
     }
-  
-  
-  
+
     .arch_container{
       width: 350px;
-      height: 100%;
+      height: 950px;
       margin:auto;
     }
   
@@ -1385,6 +1512,10 @@ footer{
       color: white;
       line-height: 27px;
     }
+
+    #archiving .arch_container li:last-child .explain p:last-child{
+      margin-top: 25px;
+    }
     #archiving .caption_link{
       width: 100px;
       height: 100px;
@@ -1399,43 +1530,76 @@ footer{
       text-align: center;
       padding-top: 30px;
     }
+
+    #project{
+      width: 100%;
+      height: 2000px;
+      padding-top: 20px;
+    }
   
     .java_project{
       width: 350px;
       height: 1000px;
       margin: auto;
+      margin-top: 50px;
+    }
+
+    .java_project div:first-child{
+      width: 120px;
+      height: 35px;
+      margin-left: 115px;
+     border-bottom: 5px solid rgb(179,91,65);
+    }
+    .c_project div:first-child{
+      width: 90px;
+      height: 35px;
+      margin-left: 130px;
+     border-bottom: 5px solid rgb(179,91,65);
     }
   
-     .c_project{
+     #project .c_project{
       width: 350px;
       height: 600px;
-      margin: auto;
+      padding-top: 30px;
+      margin-top: 50px;
     }
   
     .main_name_arch{
-      width: 170px;
-      font-size: 2.5em;
+      width: 120px;
+      height: 40px;
+      padding: 6px;
+      font-size: 1.5em;
     }
   
     .main_name_project{
-      width: 130px;
-      font-size: 2.5em;
+      width: 100px;
+      height: 40px;
+      padding-top: 6px;
+      font-size: 1.5em;
     }
    
     .java_project div:first-child, .c_project div:first-child{
-      font-size: 1.6em;
+      font-size: 1.3em;
     }
+
+    
   
     #project .java_project ul li{
-      margin-left: 0px;
+      width: 300px;
+      margin-left: 25px;
       margin-bottom: 50px;
     }
 
+    #project .java_project img{
+      transform: scale(0.8);
+      margin: 0;
+    }
+
     .java_project .caption_java{
-      width: 300px;
-      height: 217px;
-      left: 25px;
-      top: 20px;
+      width: 240px;
+      height: 174px;
+      left: 30px;
+      top: 22px;
       position: absolute;
       background: rgba(0, 0, 0, 0.6);
       opacity: 1;
@@ -1448,11 +1612,19 @@ footer{
       border-radius: 10px;
     }
 
+    .java_project .caption_java p{
+      font-size: 0.8em;
+    }
+
+    .java_project ul li:nth-child(2) .caption_java{
+      padding: 0;
+    }
+
     .c_project .caption_c{
-      width: 300px;
-      height: 217px;
-      left: 25px;
-      top: 20px;
+      width: 240px;
+      height: 174px;
+      left: 30px;
+      top: 22px;
       position: absolute;
       background: rgba(0, 0, 0, 0.6);
       opacity: 1;
@@ -1461,12 +1633,19 @@ footer{
       text-align: center;
       border-radius: 10px;
       padding-top: 20px;
-      line-height: 50px;
+      line-height: 45px;
       color: white;
     }
   
-    .c_project ul li {
-      margin-left: 0px;
+    #project .c_project ul li {
+      width: 300px;
+      margin-left: 25px;
+      margin-bottom: 50px;
+    }
+
+    #project .c_project img{
+      transform: scale(0.8);
+      margin: 0;
     }
 
 
