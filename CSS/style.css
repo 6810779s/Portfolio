@@ -1097,10 +1097,11 @@ footer{
 
   .java_project div:first-child{
     margin-left: 275px;
-    width: 150px;
+    width: 155px;
     height: 35px;
    border-bottom: 5px solid rgb(179,91,65);
   }
+
 
    .c_project, .web_project{
     width: 700px;
@@ -1136,6 +1137,9 @@ footer{
   .java_project div:first-child, .c_project div:first-child, .web_project div:first-child{
     font-size: 1.6em;
   }
+  .java_project div:first-child p, .c_project div:first-child p, .web_project div:first-child p{
+    text-align: center;
+  }
 
   #project .java_project ul li{
     margin-left: 175px;
@@ -1148,13 +1152,13 @@ footer{
 
   .c_project div:first-child{
     margin-left: 300px;
-    width: 115px;
+    width: 130px;
     height: 35px;
    border-bottom: 5px solid rgb(179,91,65);
   }
   .web_project div:first-child{
     margin-left: 275px;
-    width: 155px;
+    width: 170px;
     height: 35px;
    border-bottom: 5px solid rgb(179,91,65);
   }
@@ -1557,20 +1561,20 @@ footer{
     }
 
     .java_project div:first-child{
-      width: 120px;
+      width: 130px;
       height: 35px;
       margin-left: 115px;
      border-bottom: 5px solid rgb(179,91,65);
     }
     .c_project div:first-child{
-      width: 90px;
+      width: 100px;
       height: 35px;
       margin-left: 130px;
      border-bottom: 5px solid rgb(179,91,65);
     }
 
     .web_project div:first-child{
-      width: 120px;
+      width: 130px;
       height: 35px;
       margin-left: 115px;
      border-bottom: 5px solid rgb(179,91,65);
@@ -1598,7 +1602,11 @@ footer{
     }
    
     .java_project div:first-child, .c_project div:first-child, .web_project div:first-child{
-      font-size: 1.3em;
+        font-size: 1.3em;
+      }
+    
+    .java_project div:first-child p, .c_project div:first-child p, .web_project div:first-child p{
+        text-align: center;
     }
 
     #project .java_project .explain_link, #project .c_project .explain_link, #project .web_project .explain_link{
