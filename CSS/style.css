@@ -1069,7 +1069,7 @@ footer{
     width: 100%;
     height: 200px;
     margin-top: 30px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center;
     border-radius: 0px 0px 10px 10px;
     border-top: 1px dashed rgb(221, 214, 214);
@@ -1097,7 +1097,7 @@ footer{
 
   .java_project div:first-child{
     margin-left: 275px;
-    width: 145px;
+    width: 150px;
     height: 35px;
    border-bottom: 5px solid rgb(179,91,65);
   }
@@ -1148,13 +1148,13 @@ footer{
 
   .c_project div:first-child{
     margin-left: 300px;
-    width: 110px;
+    width: 115px;
     height: 35px;
    border-bottom: 5px solid rgb(179,91,65);
   }
   .web_project div:first-child{
     margin-left: 275px;
-    width: 150px;
+    width: 155px;
     height: 35px;
    border-bottom: 5px solid rgb(179,91,65);
   }
@@ -1292,7 +1292,7 @@ footer{
       text-align: center;
       width: 130px;
       height: 40px;
-      padding-top: 5.5px;
+      padding-top: 5.4px;
       font-size: 1.5em;
       border-bottom:1px solid gray;
     }
@@ -1576,7 +1576,7 @@ footer{
      border-bottom: 5px solid rgb(179,91,65);
     }
   
-     #project .c_project #project .web_project{
+     #project .c_project, #project .web_project{
       width: 350px;
       height: 600px;
       padding-top: 30px;
@@ -1601,6 +1601,10 @@ footer{
       font-size: 1.3em;
     }
 
+    #project .java_project .explain_link, #project .c_project .explain_link, #project .web_project .explain_link{
+        width: 300px;
+        height: 150px;
+    }
     
   
     #project .java_project ul li{
