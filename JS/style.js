@@ -1,14 +1,14 @@
 let slide_container = document.querySelector('#profile .slider_container');
 let count = 0;
 
-setInterval(function () {
-  slide_container.style.left = -count * 1200 + "px";
-  if (count === 3) {
-    slide_container.style.left = 0 + "px";
-    count = -1;
-  }
-  count++;
-}, 2500);
+// setInterval(function () {
+//   slide_container.style.left = -count * 1200 + "px";
+//   if (count === 3) {
+//     slide_container.style.left = 0 + "px";
+//     count = -1;
+//   }
+//   count++;
+// }, 2500);
 
 let slide_container2 = document.querySelector('#profile2 .slider_container');
 let count2 = 0;
